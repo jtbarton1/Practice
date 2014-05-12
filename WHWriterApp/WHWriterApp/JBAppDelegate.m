@@ -17,11 +17,15 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(20, 20, 150, 50)];
-    button.backgroundColor = [UIColor orangeColor];
-    [button setTitle:@"Dis button" forState:UIControlStateNormal];
+    _ViewController = [[JBViewController alloc] init];
+    [self.window setRootViewController:_ViewController];
     
     return YES;
+}
+
++(void)loginUser
+{
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

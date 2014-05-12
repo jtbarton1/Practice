@@ -19,6 +19,9 @@
 		3F0BFE5B1921557D0062159E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0BFE431921557D0062159E /* UIKit.framework */; };
 		3F0BFE631921557D0062159E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BFE611921557D0062159E /* InfoPlist.strings */; };
 		3F0BFE651921557D0062159E /* WHWriterAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0BFE641921557D0062159E /* WHWriterAppTests.m */; };
+		3F0BFE7019215F560062159E /* JBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0BFE6F19215F560062159E /* JBViewController.m */; };
+		3F0BFE73192164D40062159E /* JBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0BFE72192164D40062159E /* JBView.m */; };
+		3F0BFE78192191FA0062159E /* JBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0BFE77192191FA0062159E /* JBTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		3F0BFE601921557D0062159E /* WHWriterAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WHWriterAppTests-Info.plist"; sourceTree = "<group>"; };
 		3F0BFE621921557D0062159E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F0BFE641921557D0062159E /* WHWriterAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHWriterAppTests.m; sourceTree = "<group>"; };
+		3F0BFE6E19215F560062159E /* JBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBViewController.h; sourceTree = "<group>"; };
+		3F0BFE6F19215F560062159E /* JBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBViewController.m; sourceTree = "<group>"; };
+		3F0BFE71192164D40062159E /* JBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBView.h; sourceTree = "<group>"; };
+		3F0BFE72192164D40062159E /* JBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBView.m; sourceTree = "<group>"; };
+		3F0BFE76192191FA0062159E /* JBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBTableViewController.h; sourceTree = "<group>"; };
+		3F0BFE77192191FA0062159E /* JBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,8 @@
 			children = (
 				3F0BFE4E1921557D0062159E /* JBAppDelegate.h */,
 				3F0BFE4F1921557D0062159E /* JBAppDelegate.m */,
+				3F0BFE74192189950062159E /* View Controllers */,
+				3F0BFE75192189B00062159E /* Views */,
 				3F0BFE511921557D0062159E /* Images.xcassets */,
 				3F0BFE461921557D0062159E /* Supporting Files */,
 			);
@@ -142,6 +153,26 @@
 				3F0BFE611921557D0062159E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F0BFE74192189950062159E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F0BFE6E19215F560062159E /* JBViewController.h */,
+				3F0BFE6F19215F560062159E /* JBViewController.m */,
+				3F0BFE76192191FA0062159E /* JBTableViewController.h */,
+				3F0BFE77192191FA0062159E /* JBTableViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3F0BFE75192189B00062159E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F0BFE71192164D40062159E /* JBView.h */,
+				3F0BFE72192164D40062159E /* JBView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0BFE501921557D0062159E /* JBAppDelegate.m in Sources */,
+				3F0BFE7019215F560062159E /* JBViewController.m in Sources */,
+				3F0BFE78192191FA0062159E /* JBTableViewController.m in Sources */,
+				3F0BFE73192164D40062159E /* JBView.m in Sources */,
 				3F0BFE4C1921557D0062159E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +474,7 @@
 				3F0BFE6A1921557D0062159E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F0BFE6B1921557D0062159E /* Build configuration list for PBXNativeTarget "WHWriterAppTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +483,7 @@
 				3F0BFE6D1921557D0062159E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JBViewController.h"
 
 @interface JBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property JBViewController *ViewController;
+
++(void)loginUser;
 
 @end
