@@ -23,7 +23,12 @@
     return YES;
 }
 
-+(void)loginUser
+-(void)loginUser
+{
+    
+}
+
+-(void)localLogin
 {
     
 }

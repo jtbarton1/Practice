@@ -1,5 +1,5 @@
 //
-//  JBViewController.h
+//  JBNavController.h
 //  WHWriterApp
 //
 //  Created by Jeremy on 5/12/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JBViewController : UIViewController
-
--(IBAction)Next;
+@interface JBNavController : UINavigationController
 
 @end

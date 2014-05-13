@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "JBViewController.h"
+#import "JBNavController.h"
 
 @interface JBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property JBViewController *ViewController;
-
-+(void)loginUser;
+@property JBNavController *NavController;
 
 @end

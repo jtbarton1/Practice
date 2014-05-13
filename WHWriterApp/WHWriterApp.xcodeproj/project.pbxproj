@@ -22,6 +22,7 @@
 		3F0BFE7019215F560062159E /* JBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0BFE6F19215F560062159E /* JBViewController.m */; };
 		3F0BFE73192164D40062159E /* JBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0BFE72192164D40062159E /* JBView.m */; };
 		3F0BFE78192191FA0062159E /* JBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0BFE77192191FA0062159E /* JBTableViewController.m */; };
+		3F0BFE7B192194E50062159E /* JBNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0BFE7A192194E50062159E /* JBNavController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		3F0BFE72192164D40062159E /* JBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBView.m; sourceTree = "<group>"; };
 		3F0BFE76192191FA0062159E /* JBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBTableViewController.h; sourceTree = "<group>"; };
 		3F0BFE77192191FA0062159E /* JBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBTableViewController.m; sourceTree = "<group>"; };
+		3F0BFE79192194E50062159E /* JBNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBNavController.h; sourceTree = "<group>"; };
+		3F0BFE7A192194E50062159E /* JBNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBNavController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				3F0BFE6F19215F560062159E /* JBViewController.m */,
 				3F0BFE76192191FA0062159E /* JBTableViewController.h */,
 				3F0BFE77192191FA0062159E /* JBTableViewController.m */,
+				3F0BFE79192194E50062159E /* JBNavController.h */,
+				3F0BFE7A192194E50062159E /* JBNavController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0BFE501921557D0062159E /* JBAppDelegate.m in Sources */,
+				3F0BFE7B192194E50062159E /* JBNavController.m in Sources */,
 				3F0BFE7019215F560062159E /* JBViewController.m in Sources */,
 				3F0BFE78192191FA0062159E /* JBTableViewController.m in Sources */,
 				3F0BFE73192164D40062159E /* JBView.m in Sources */,

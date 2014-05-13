@@ -1,5 +1,5 @@
 //
-//  JBViewController.m
+//  JBNavController.m
 //  WHWriterApp
 //
 //  Created by Jeremy on 5/12/14.
@@ -7,14 +7,14 @@
 //
 
 #import "JBNavController.h"
-#import "JBViewController.h"
-#import "JBView.h"
+#import "JBTableViewController.h"
 
-@interface JBViewController ()
+@interface JBNavController ()
+@property JBTableViewController *TableVC;
 
 @end
 
-@implementation JBViewController
+@implementation JBNavController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,23 +28,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    JBView *view = [[JBView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [view.login addTarget:self action:@selector(didTapMyButton:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:view];
+    _TableVC = [[JBTableViewController alloc] initWithNibName:nil bundle:nil];
+    _TableVC.title = @"Your Articles";
+    [self pushViewController:_TableVC animated:YES];
     // Do any additional setup after loading the view.
-}
-
--(void)didTapMyButton:(UIButton *)sender
-{
-    
-    [self Next];
-}
-
--(IBAction)Next
-{
-    JBNavController *Navigation = [[JBNavController alloc] initWithNibName:nil bundle:nil];
-    [self presentViewController:Navigation animated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning
